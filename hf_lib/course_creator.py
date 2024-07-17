@@ -56,8 +56,7 @@ Think step by step and make sure the user can learn the main topic easily.'
             print(e)
             llm.send_message(
                 UserMessage(
-                    f'The following error occured: {
-                        e}. Please fix your response and try again.'
+                    f'The following error occured: {e}. Please fix your response and try again.'
                 )
             )
             # self.recommend(topic, subtopics)
