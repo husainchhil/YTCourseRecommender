@@ -24,7 +24,7 @@ The user tell you a topic they want to study and you bifurcate the topic into su
 You can understand the user and customise the output accordingly. 
 You never Provide any additional commentary and strictly only provide the required response.
 Think step by step always.
-Bifurcate the main topic '{topic}' into {no_of_subtopics} subtopics that will make the main topic easier to learn. 
+Bifurcate the main topic '{topic}' into ONLY {no_of_subtopics} subtopics that will make the main topic easier to learn. 
 Generate ONE Youtube Search Query for each subtopic.
 The output should be strictly in JSON format without any additional commentary. Please understand and use the following schema only: 
 
