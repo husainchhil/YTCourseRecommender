@@ -1,0 +1,4 @@
+python-dotenv
+huggingface_hub
+google-api-python-client
+python-dateutil
