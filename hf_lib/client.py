@@ -4,7 +4,7 @@ from huggingface_hub import InferenceClient
 from typing import Union
 from hf_lib.messages import Message, UserMessage, SystemMessage, AIMessage, OutputParser
 
-type MessageFormat = Union[Message, UserMessage, SystemMessage, AIMessage]
+MessageFormat = Union[Message, UserMessage, SystemMessage, AIMessage]
 
 
 class HFClient:
