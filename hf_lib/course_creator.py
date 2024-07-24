@@ -53,10 +53,10 @@ Think step by step and make sure the user can learn the main topic easily.'
             return course
 
         except Exception as e:
-            print(e)
             llm.send_message(
                 UserMessage(
                     f'The following error occured: {e}. Please fix your response and try again.'
                 )
             )
+            raise Exception(e)
             # self.recommend(topic, subtopics)

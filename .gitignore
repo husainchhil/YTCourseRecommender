@@ -2,3 +2,4 @@ __pycache__
 .venv
 .env
 llama.ipynb
+rm.json
