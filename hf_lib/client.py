@@ -24,6 +24,7 @@ class HFClient:
     def conversation(self, output_parser=None, **model_kwargs):
 
         response = self.__client.chat_completion(
+            temperature=0.5,
             messages=self.messages,
             max_tokens=1000,
             **model_kwargs

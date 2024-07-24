@@ -58,5 +58,5 @@ Think step by step and make sure the user can learn the main topic easily.'
                     f'The following error occured: {e}. Please fix your response and try again.'
                 )
             )
-            raise Exception(e)
+            raise e
             # self.recommend(topic, subtopics)

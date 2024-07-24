@@ -24,9 +24,9 @@ def ytsearch(query: str) -> str:
         ).execute()
 
     except HttpError as e:
-        print('An HTTP error %d occurred:\n%s' %
-              (e.resp.status, e.content))
-        return None
+        if e.resp.status == 403:
+            raise Exception(
+                "You have exceeded your daily quota for the YouTube API. Please try again tomorrow.")
 
     videos = []
 
